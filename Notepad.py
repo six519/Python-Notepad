@@ -4,8 +4,6 @@ from tkinter import *
 from tkinter.messagebox import *
 from tkinter.filedialog import *
 
-
-
 class Notepad:
 
     #variables
@@ -26,7 +24,10 @@ class Notepad:
         #initialization
 
         #set icon
-        self.__root.wm_iconbitmap("Notepad.ico")
+        try:
+        		self.__root.wm_iconbitmap("Notepad.ico") #GOT TO FIX THIS ERROR (ICON)
+        except:
+        		pass
 
         #set window size (the default is 300x300)
 
